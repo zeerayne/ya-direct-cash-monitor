@@ -56,7 +56,6 @@ class ClientYandexDirect:
         return json["data"]
 
     def _get_api_root(self, api_version):
-        """Returns the API URL for the specified method."""
         if self.sandbox:
             if api_version == "live4":
                 return "https://api-sandbox.direct.yandex.ru/live/v4/json/"
