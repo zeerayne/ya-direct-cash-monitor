@@ -1,0 +1,15 @@
+[direct]
+application_id = YOUR_APP_ID # get it here https://oauth.yandex.com/client/new
+
+[email]
+smtp_host = localhost
+smtp_port = 25
+login = dummy
+password = pwd
+from = robot
+to = me
+
+[clients]
+cl1 = AUTH_CODE_1 # https://oauth.yandex.com/authorize?response_type=code&client_id=YOUR_APP_ID
+cl2 = AUTH_CODE_2
+cl3 = AUTH_CODE_3
