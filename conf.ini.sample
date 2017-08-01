@@ -1,5 +1,6 @@
 [direct]
 application_id = YOUR_APP_ID # get it here https://oauth.yandex.com/client/new
+application_password = YOUR_APP_PASS
 
 [email]
 smtp_host = localhost

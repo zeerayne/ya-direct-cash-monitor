@@ -3,8 +3,7 @@ import email_sender
 import configparser
 
 
-application_id = "db918b5211a7440c8e974683f77359de"
-sandbox = True
+sandbox = False
 
 
 config = configparser.ConfigParser()
@@ -14,7 +13,6 @@ config.read('conf.ini')
 def process_client(json):
     result = []
     for account in json['Accounts']:
-        #account_str = account['Login'] + ' ' + account['Amount'] + ' ' + account['Currency']
         account_info = {
             'login': account['Login'],
             'amount': account['Amount'],
