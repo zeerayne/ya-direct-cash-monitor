@@ -8,7 +8,7 @@ smtp_port = 25
 login = dummy
 password = pwd
 from = robot
-to = me
+to = me, you, someone # comma separated email address list
 
 [clients]
 cl1 = AUTH_CODE_1 # https://oauth.yandex.com/authorize?response_type=code&client_id=YOUR_APP_ID

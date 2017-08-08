@@ -32,7 +32,7 @@ def send_notification(clients_array, config):
     msg = make_message(clients_array, config)
     server.sendmail(
         config['email']['from'],
-        config['email']['to'],
+        config['email']['to'].replace(' ', '').split(","),
         msg.as_string()
     )
     server.quit()
